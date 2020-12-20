@@ -8,3 +8,21 @@ This repository shows the TensorFlow Lite and TensorRT model conversion and infe
 </p>
 
 Model training code and pre-trained weights are provided by Soumik through [this repository](https://github.com/soumik12345/MIRNet/).
+
+## A bit about the architecture
+
+The **MIRNet** presents a novel architecture with the collective goals of maintaining high-resolution representations through the entire network, and
+receiving strong contextual information from the low-resolution representations.
+
+The core of this approach is a multi-scale residual block containing the following key elements:
+- parallel multi-resolution convolution streams for extracting multi-scale features
+- information exchange across the multi-resolution streams
+- spatial and channel attention mechanisms for capturing contextual information
+- attention based multi-scale feature aggregation.
+
+![](https://i.imgur.com/VOzfG9a.png)
+<p align="center">
+<small>Framework of MIRNet</small>
+</p>
+
+The figure above shows the framework of the proposed network MIRNet that learns enriched feature representations for image restoration and enhancement.
