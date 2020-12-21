@@ -26,3 +26,17 @@ The core of this approach is a multi-scale residual block containing the followi
 </p>
 
 The figure above shows the framework of the proposed network MIRNet that learns enriched feature representations for image restoration and enhancement.
+
+## About the notebooks
+
+#### [`MIRNet_Saved_Model.ipynb`](MIRNet_Saved_Model.ipynb)
+
+This notebook shows the the process of downloading pre-trained weights for the MIRNet model and saving it as a `SavedModel`.
+
+#### [`MIRNet_TFJS.ipynb`](MIRNet_TFJS.ipynb)
+
+This notebook shows the the process of converting the `SavedModel` to the TFJS format we built in the prequel notebook for the MIRNet model. It also shows performing optimizations on this.
+
+#### [`MIRNet_Inference.ipynb`](MIRNet_Inference.ipynb) 
+
+This notebook shows the the process of inferencing for the MIRNet model on a couple of low light photos.
