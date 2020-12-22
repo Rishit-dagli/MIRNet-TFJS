@@ -37,6 +37,8 @@ The figure above shows the framework of the proposed network MIRNet that learns 
 This notebook shows the the process of downloading pre-trained weights for the MIRNet model and saving it as a `SavedModel`.
 
 ### [`MIRNet_TFJS.ipynb`](MIRNet_TFJS.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Rishit-dagli/MIRNet-TFJS/HEAD?filepath=MIRNet_TFJS.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rishit-dagli/MIRNet-TFJS/blob/main/MIRNet_TFJS.ipynb)
 
 This notebook shows the the process of converting the `SavedModel` to the TFJS format we built in the prequel notebook for the MIRNet model. It also shows performing optimizations on this.
 
