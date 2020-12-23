@@ -1,10 +1,9 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "hello-express",
+  "//1": "An example of running the MIRNet-TFJS",
+  "//2": "https://github.com/Rishit-dagli/MIRNet-TFJS",
+  "name": "mirnet-tfjs",
   "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
+  "description": "An example of running the the MIRNet model to enhance low-light images on the web.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -19,12 +18,11 @@
     "node": "12.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
+    "url": "https://github.com/Rishit-dagli/MIRNet-TFJS"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "keywords": [
-    "node",
-    "glitch",
+    "tfjs",
     "express"
   ]
 }
