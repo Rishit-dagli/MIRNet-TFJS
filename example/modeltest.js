@@ -56,8 +56,8 @@ const predict = async () => {
         console.log(outputTensor.add_171);
 
         outputTensor = outputTensor.add_171;
-        outputTensor = tf.reshape(outputTensor, [512, 512, 3]);
-        outputTensor.squeeze(axis = 0);
+        // outputTensor = tf.reshape(outputTensor, [512, 512, 3]);
+        outputTensor = outputTensor.squeeze(axis = 0);
 
         // outputTensor = new Uint8Array(outputTensor);
         outputTensor = await tf.node.encodeJpeg(outputTensor, "rgb");
