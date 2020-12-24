@@ -57,9 +57,10 @@ const predict = async () => {
 
         outputTensor = outputTensor.add_171;
         outputTensor = tf.reshape(outputTensor, [512, 512, 3]);
+        outputTensor.squeeze(axis = 0);
 
         // outputTensor = new Uint8Array(outputTensor);
-        outputTensor = await tf.node.encodeJpeg(outputTensor, "grayscale");
+        outputTensor = await tf.node.encodeJpeg(outputTensor, "rgb");
 
         fs.writeFileSync("./uploads/NEW-1.jpeg", outputTensor);
 
