@@ -34,8 +34,9 @@ const predict = async () => {
 
         // image = new Uint8Array(image);
         // Decode the image into a tensor.
-        let imageTensor = await tf.node.decodeImage(image, 3);
+        let imageTensor = await tf.node.decodePng(image, 3);
         imageTensor = tf.image.resizeBilinear(imageTensor, size = [imageSize, imageSize])
+
         console.log("after img 2 tensor");
 
         let input = imageTensor.expandDims(0);
@@ -53,16 +54,15 @@ const predict = async () => {
         console.log(endTime - startTime);
         console.log("After Predict");
 
-        console.log(outputTensor.add_171);
-
         outputTensor = outputTensor.add_171;
         // outputTensor = tf.reshape(outputTensor, [512, 512, 3]);
-        outputTensor = outputTensor.squeeze(axis = 0);
+        outputTensor = outputTensor.squeeze();
+        console.log(outputTensor);
 
         // outputTensor = new Uint8Array(outputTensor);
-        outputTensor = await tf.node.encodeJpeg(outputTensor, "rgb");
+        outputTensor = await tf.node.encodeJpeg(outputTensor);
 
-        fs.writeFileSync("./uploads/NEW-1.jpeg", outputTensor);
+        fs.writeFileSync("./uploads/NEW-1.Jpeg", outputTensor);
 
     } catch (error) {
         console.log(error);
