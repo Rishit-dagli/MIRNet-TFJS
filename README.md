@@ -11,7 +11,7 @@
 
 This repository shows the TFJS model conversion and inference processes for the for the **MIRNet** model as proposed by [Learning Enriched Features for Real Image Restoration and Enhancement](https://arxiv.org/pdf/2003.06792v2.pdf) by Zamir et al. This model is capable of enhancing low-light images upto a great extent.
 
-![Examples](https://i.imgur.com/DAsqeFC.jpg)
+![Examples](images/mirnet-results.jpg)
 
 Model training code and pre-trained weights are provided by Soumik through [this repository](https://github.com/soumik12345/MIRNet/).
 
@@ -26,7 +26,7 @@ The core of this approach is a multi-scale residual block containing the followi
 - spatial and channel attention mechanisms for capturing contextual information
 - attention based multi-scale feature aggregation.
 
-![](https://i.imgur.com/VOzfG9a.png)
+![](images/mirnet-framework.png)
 <p align="center">
 <small>Framework of MIRNet</small>
 </p>
