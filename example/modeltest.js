@@ -9,14 +9,11 @@ async function loadModel() {
         // Warm up the model
         if (!mirNetModel) {
 
-              modelInfo = await tf.node.getMetaGraphsFromSavedModel('./model');
-              console.log("\n\n\n");
-              console.log(await modelInfo);
-              console.log("\n\n\n");
+            modelInfo = await tf.node.getMetaGraphsFromSavedModel('./model');
+            console.log("\n\n\n");
+            console.log(await modelInfo);
+            console.log("\n\n\n");
 
-            // Load the TensorFlow SavedModel through tfjs-node API. You can find more
-            // details in the API documentation:
-            // https://js.tensorflow.org/api_node/1.3.1/#node.loadSavedModel
             mirNetModel = await tf.node.loadSavedModel(
                 './model'
             );
@@ -55,7 +52,7 @@ const predict = async () => {
         console.log("After Predict");
 
         // console.log(outputTensor);
-        
+
         outputTensor = tf.reshape(outputTensor, [512, 512, 3]);
         // outputTensor = outputTensor.squeeze();
 
@@ -71,7 +68,7 @@ const predict = async () => {
 
         outputTensor = tf.mul(outputTensor, tf.scalar(255.0));
         outputTensor = tf.clipByValue(outputTensor, 0, 255);
-        
+
         tf.print(outputTensor, true);
         outputTensor = await tf.node.encodePng(outputTensor);
 
