@@ -26,7 +26,7 @@ const predict = async () => {
     try {
         await loadModel();
         console.log("Inside predict");
-        let image = fs.readFileSync("Capture.PNG");
+        let image = fs.readFileSync("input.PNG");
 
         // image = new Uint8Array(image);
         // Decode the image into a tensor.
