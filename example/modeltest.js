@@ -35,34 +35,47 @@ const predict = async () => {
         // image = new Uint8Array(image);
         // Decode the image into a tensor.
         let imageTensor = await tf.node.decodePng(image, 3);
-        imageTensor = tf.image.resizeBilinear(imageTensor, size = [imageSize, imageSize])
+        imageTensor = tf.image.resizeBilinear(imageTensor, size = [imageSize, imageSize]);
+        imageTensor = tf.cast(imageTensor, "float32");
+        imageTensor = tf.div(imageTensor, tf.scalar(255.0));
 
         console.log("after img 2 tensor");
 
         let input = imageTensor.expandDims(0);
         // [:,:,:3]
         // input = input[[,,], [,,], [,3]]
-        console.log(input);
 
         // Feed the image tensor into the model for inference.
         const startTime = tf.util.now();
-        input = tf.cast(input, "float32");
 
-        let outputTensor = await mirNetModel.predict({ 'input_1': input });
+        let outputTensor = await mirNetModel.predict(input);
 
         const endTime = tf.util.now();
         console.log(endTime - startTime);
         console.log("After Predict");
 
-        outputTensor = outputTensor.add_171;
-        // outputTensor = tf.reshape(outputTensor, [512, 512, 3]);
-        outputTensor = outputTensor.squeeze();
-        console.log(outputTensor);
+        // console.log(outputTensor);
+        
+        outputTensor = tf.reshape(outputTensor, [512, 512, 3]);
+        // outputTensor = outputTensor.squeeze();
 
         // outputTensor = new Uint8Array(outputTensor);
-        outputTensor = await tf.node.encodeJpeg(outputTensor);
 
-        fs.writeFileSync("./uploads/NEW-1.Jpeg", outputTensor);
+        // let factor = tf.onesLike(outputTensor);
+        // factor = tf.mul(factor, tf.min(outputTensor));
+        // outputTensor = tf.add(outputTensor, factor);
+        // const mulFactor = tf.max(outputTensor) / 255.0;
+        // outputTensor = tf.mul(outputTensor, mulFactor);
+
+        // outputTensor = tf.mul(outputTensor, factor);
+
+        outputTensor = tf.mul(outputTensor, tf.scalar(255.0));
+        outputTensor = tf.clipByValue(outputTensor, 0, 255);
+        
+        tf.print(outputTensor, true);
+        outputTensor = await tf.node.encodePng(outputTensor);
+
+        fs.writeFileSync("output.Png", outputTensor);
 
     } catch (error) {
         console.log(error);
