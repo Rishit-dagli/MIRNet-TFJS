@@ -2,6 +2,7 @@ const tf = require('@tensorflow/tfjs-node');
 const fs = require('fs');
 let mirNetModel;
 let modelInfo;
+
 const imageSize = 512;
 
 async function loadModel() {
@@ -10,9 +11,7 @@ async function loadModel() {
         if (!mirNetModel) {
 
             modelInfo = await tf.node.getMetaGraphsFromSavedModel('./model');
-            console.log("\n\n\n");
             console.log(await modelInfo);
-            console.log("\n\n\n");
 
             mirNetModel = await tf.node.loadSavedModel(
                 './model'
@@ -36,11 +35,7 @@ const predict = async () => {
         imageTensor = tf.cast(imageTensor, "float32");
         imageTensor = tf.div(imageTensor, tf.scalar(255.0));
 
-        console.log("after img 2 tensor");
-
         let input = imageTensor.expandDims(0);
-        // [:,:,:3]
-        // input = input[[,,], [,,], [,3]]
 
         // Feed the image tensor into the model for inference.
         const startTime = tf.util.now();
@@ -50,8 +45,6 @@ const predict = async () => {
         const endTime = tf.util.now();
         console.log(endTime - startTime);
         console.log("After Predict");
-
-        // console.log(outputTensor);
 
         outputTensor = tf.reshape(outputTensor, [512, 512, 3]);
         // outputTensor = outputTensor.squeeze();
@@ -69,9 +62,7 @@ const predict = async () => {
         outputTensor = tf.mul(outputTensor, tf.scalar(255.0));
         outputTensor = tf.clipByValue(outputTensor, 0, 255);
 
-        tf.print(outputTensor, true);
         outputTensor = await tf.node.encodePng(outputTensor);
-
         fs.writeFileSync("output.Png", outputTensor);
 
     } catch (error) {
