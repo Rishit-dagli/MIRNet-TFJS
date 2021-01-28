@@ -101,7 +101,7 @@ The [`modeltest.js`](https://github.com/Rishit-dagli/MIRNet-TFJS/blob/prod/model
 ## License
 
 ```
-Copyright 2020 Shreyas Patil
+Copyright 2020 Rishit Dagli
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
