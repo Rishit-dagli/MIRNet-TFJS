@@ -4,24 +4,19 @@
   "name": "mirnet-tfjs",
   "version": "0.0.1",
   "description": "An example of running the the MIRNet model to enhance low-light images on the web.",
-
   "main": "app.js",
-
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon node ./bin/www"
   },
-
   "repository": {
     "type": "git",
     "url": "https://github.com/Rishit-dagli/MIRNet-TFJS"
   },
-
   "dependencies": {
-    "@tensorflow/tfjs-node": "^2.8.1",
     "@tensorflow/tfjs-backend-cpu": "2.8.1",
+    "@tensorflow/tfjs-node": "^2.8.1",
     "busboy": "^0.3.1",
-    "node-fetch": "2.6.1",
     "compression": "1.7.4",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -29,21 +24,18 @@
     "formidable": "1.2.2",
     "helmet": "4.2.0",
     "morgan": "~1.9.1",
+    "node-fetch": "2.6.1"
   },
-
   "keywords": [
     "tfjs",
     "express",
     "mirnet-tfjs"
   ],
-
   "contributors": [
     "Rishit Dagli",
     "Omkar Agrawal"
   ],
-
   "license": "Apache-2.0",
-  
   "devDependencies": {
     "dotenv": "8.2.0",
     "image-js": "^0.31.3",

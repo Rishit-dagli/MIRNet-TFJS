@@ -11,7 +11,6 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const fs = require('fs');
-const sharp = require('sharp');
 
 const app = express();
 
@@ -20,6 +19,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(compression());
+app.use(helmet({hsts: false}));
 
 // app.get('/', function(req, res, next) {
 //     res.render('index', { title: 'Express' });
@@ -92,8 +93,11 @@ const predict = async (imgPath, responseImagePath) => {
     outputTensor = await tf.node.encodePng(outputTensor);
     fs.writeFileSync(responseImagePath, outputTensor);
 
+    return true;
+
   } catch (error) {
     console.log(error);
+    return false;
   }
 };
 
@@ -115,7 +119,7 @@ app.post('/submit', (req, res) => {
       res.send("Incorrect File Format");
       console.log('\n' + err + '\n');
     } else {
-      // console.log("sending File: " + files.image.name);
+      console.log("sending File: " + files.image.name);
       // res.sendFile(files.image.path);
       try {
         let toSend = await predict(files.image.path, path.join(__dirname, "public", "responseImages") + files.image.name);
