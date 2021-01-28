@@ -78,3 +78,17 @@ Your app should now be running on [localhost:3000](localhost:3000) :rocket:.
 #### Run online on Repl.it
 
 Alternatively you could also get up and running with this example with the free to use online service Repl.it. Get started by clicking on this button [![Run on Repl.it](https://repl.it/badge/github/Rishit-dagli/MIRNet-TFJS)](https://repl.it/@RishitDagli/MIRNet-TFJS) after which you would click the Run button on the top which runs `npm start` and voila your app is now running :rocket:.
+
+### Troubleshooting
+
+The [`prod`](https://github.com/Rishit-dagli/MIRNet-TFJS/tree/prod) branch has a standalone [`modeltest.js`](https://github.com/Rishit-dagli/MIRNet-TFJS/blob/prod/modeltest.js) file, which tries to run the model on a specified file and then save the output to test the model. You can test the model with this file through:
+
+```sh
+git clone git@github.com:Rishit-dagli/MIRNet-TFJS.git # or clone your own fork
+cd MIRNet-TFJS
+git checkout prod # switch to the prod branch
+npm install
+node modeltest.js
+```
+
+The [`modeltest.js`](https://github.com/Rishit-dagli/MIRNet-TFJS/blob/prod/modeltest.js) uses the `input.PNG` image file in the root directory and outputs a `output.Png` image file.
