@@ -29,7 +29,6 @@
     "formidable": "1.2.2",
     "helmet": "4.2.0",
     "morgan": "~1.9.1",
-    "sharp": "^0.27.0"
   },
 
   "keywords": [
