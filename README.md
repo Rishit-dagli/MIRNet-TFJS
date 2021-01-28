@@ -54,3 +54,27 @@ This notebook shows the the process of converting the `SavedModel` to the TFJS f
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rishit-dagli/MIRNet-TFJS/blob/main/MIRNet_Inference.ipynb)
 
 This notebook shows the the process of inferencing for the MIRNet model on a couple of low light photos.
+
+## Running the TFJS Model, An example
+
+The example can be launched by simply clicking on this button [![Launch Example](https://img.shields.io/badge/launch-example-informational?style=flat&logo=google-chrome)](https://mirnet-tfjs.rishit.tech/). The code for the example can be found under the [`prod`](https://github.com/Rishit-dagli/MIRNet-TFJS/tree/prod) branch in this repo. As of now this example is a very minimalistic one as you can see in the below image. The example website is deployed on the free tier of Azure App Services so inferences could take quite some time (90 seconds or so) when a lot of folks might be using it at the same time.
+
+![](images/mirnet-example.png)
+
+### Getting Started
+
+To get up and running with this example, run the following commands, make sure you have [Node.js](http://nodejs.org/) installed.
+
+```sh
+git clone git@github.com:Rishit-dagli/MIRNet-TFJS.git # or clone your own fork
+cd MIRNet-TFJS
+git checkout prod # switch to the prod branch
+npm install
+npm start
+```
+
+Your app should now be running on [localhost:3000](localhost:3000) :rocket:.
+
+#### Run online on Repl.it
+
+Alternatively you could also get up and running with this example with the free to use online service Repl.it. Get started by clicking on this button [![Run on Repl.it](https://repl.it/badge/github/Rishit-dagli/MIRNet-TFJS)](https://repl.it/@RishitDagli/MIRNet-TFJS) after which you would click the Run button on the top which runs `npm start` and voila your app is now running :rocket:.
