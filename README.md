@@ -92,3 +92,8 @@ node modeltest.js
 ```
 
 The [`modeltest.js`](https://github.com/Rishit-dagli/MIRNet-TFJS/blob/prod/modeltest.js) uses the `input.PNG` image file in the root directory and outputs a `output.Png` image file.
+
+## Contributors
+
+- [Rishit Dagli](https://github.com/Rishit-dagli)
+- [Omkar Agrawal](https://github.com/omkaragrawal/)
