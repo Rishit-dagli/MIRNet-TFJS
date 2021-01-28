@@ -14,8 +14,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-      with:
-        lfs: 'true'
 
     - name: Set up Node.js version
       uses: actions/setup-node@v1
@@ -33,5 +31,5 @@ jobs:
       with:
         app-name: 'mirnet-tfjs'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_9f1c825f2a4249c692937843973c6e03 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_c667ce5d8ece4f6794bb5fa2fee440de }}
         package: .
