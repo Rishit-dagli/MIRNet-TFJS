@@ -2,7 +2,7 @@
 
 [![](https://img.shields.io/badge/Rishit-Dagli-brightgreen.svg?colorB=00ff00)](https://www.rishit.tech)
 ![Deploy Node.js app](https://github.com/Rishit-dagli/MIRNet-TFJS/workflows/Deploy%20Node.js%20app/badge.svg?branch=prod)
-[![Open TF Hub](https://img.shields.io/badge/open-TF%20Hub-blue?style=flat&logo=tensorflow)](https://tfhub.dev/rishit-dagli/mirnet-tfjs/)
+[![Open TF Hub](https://img.shields.io/badge/open-TF%20Hub-orange?style=flat&logo=tensorflow)](https://tfhub.dev/rishit-dagli/mirnet-tfjs/)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Rishit-dagli/MIRNet-TFJS/HEAD)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rishit-dagli/MIRNet-TFJS)
 
