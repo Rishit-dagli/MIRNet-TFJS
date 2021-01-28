@@ -75,7 +75,5 @@ const predict = async () => {
     console.log("DONE");
 })()
 
-
-
 // fs.writeFileSync("./uploads/NEW-1.png", a);
 // fs.readFileSync()
