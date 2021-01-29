@@ -31,7 +31,7 @@ Your app should now be running on [localhost:3000](http://localhost:3000) :rocke
 
 #### Run online on Repl.it
 
-Alternatively you could also get up and running with this example with the free to use online service Repl.it. Get started by clicking on this button [![Run on Repl.it](https://repl.it/badge/github/Rishit-dagli/MIRNet-TFJS)](https://repl.it/@RishitDagli/MIRNet-TFJS) after which you would click the Run button on the top which runs `npm start` and voila your app is now running :rocket:.
+Alternatively you could also get up and running with this example with the free to use online service Repl.it. Get started by clicking on this button [![Run on Repl.it](https://repl.it/badge/github/Rishit-dagli/MIRNet-TFJS)](https://repl.it/@RishitDagli/MIRNet-TFJS) after which you would click the Run button on the top or run `npm start` and voila your app is now running :rocket:.
 
 ### Troubleshooting
 
