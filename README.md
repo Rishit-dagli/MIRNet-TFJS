@@ -73,7 +73,7 @@ npm install
 npm start
 ```
 
-Your app should now be running on [localhost:3000](localhost:3000) :rocket:.
+Your app should now be running on [localhost:3000](http://localhost:3000) :rocket:.
 
 #### Run online on Repl.it
 
