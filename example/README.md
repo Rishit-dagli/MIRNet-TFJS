@@ -11,7 +11,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/Rishit-dagli/MIRNet-TFJS?style=social)](https://github.com/Rishit-dagli/MIRNet-TFJS/network/members)
 [![GitHub watchers](https://img.shields.io/github/watchers/Rishit-dagli/MIRNet-TFJS?style=social)](https://github.com/Rishit-dagli/MIRNet-TFJS/watchers)
 
-The example can be launched by simply clicking on this button [![Launch Example](https://img.shields.io/badge/launch-example-informational?style=flat&logo=google-chrome)](https://mirnet-tfjs.rishit.tech/). The code for the example can be found under the [`prod`](https://github.com/Rishit-dagli/MIRNet-TFJS/tree/prod) branch in this repo. As of now this example is a very minimalistic one as you can see in the below image. The example website is deployed on the free tier of Azure App Services so inferences could take quite some time (90 seconds or so) when a lot of folks might be using it at the same time.
+The example can be launched by simply clicking on this button [![Launch Example](https://img.shields.io/badge/launch-example-informational?style=flat&logo=google-chrome)](https://mirnet-tfjs.rishit.tech/). The code for the example can be found under the [`example`](./example) folder in this repo. As of now this example is a very minimalistic one as you can see in the below image. The example website is deployed on the free tier of Azure App Services so inferences could take quite some time (90 seconds or so) when a lot of folks might be using it at the same time.
 
 ![](https://github.com/Rishit-dagli/MIRNet-TFJS/blob/main/images/mirnet-example.png?raw=true)
 
@@ -22,7 +22,7 @@ To get up and running with this example, run the following commands, make sure y
 ```sh
 git clone git@github.com:Rishit-dagli/MIRNet-TFJS.git # or clone your own fork
 cd MIRNet-TFJS
-git checkout prod # switch to the prod branch
+cd example # switch to the example folder
 npm install
 npm start
 ```
