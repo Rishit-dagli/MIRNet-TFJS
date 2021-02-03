@@ -35,17 +35,17 @@ Alternatively you could also get up and running with this example with the free 
 
 ### Troubleshooting
 
-The [`prod`](https://github.com/Rishit-dagli/MIRNet-TFJS/tree/prod) branch has a standalone [`modeltest.js`](https://github.com/Rishit-dagli/MIRNet-TFJS/blob/prod/modeltest.js) file, which tries to run the model on a specified file and then save the output to test the model. You can test the model with this file through:
+The [`example`](./example) folder has a standalone [`modeltest.js`](./example/modeltest.js) file, which tries to run the model on a specified file and then save the output to test the model. You can test the model with this file through:
 
 ```sh
 git clone git@github.com:Rishit-dagli/MIRNet-TFJS.git # or clone your own fork
 cd MIRNet-TFJS
-git checkout prod # switch to the prod branch
+cd example # switch to the example folder
 npm install
 node modeltest.js
 ```
 
-The [`modeltest.js`](https://github.com/Rishit-dagli/MIRNet-TFJS/blob/prod/modeltest.js) uses the `input.PNG` image file in the root directory and outputs a `output.Png` image file.
+The [`modeltest.js`](./example/modeltest.js) uses the `input.PNG` image file in the root directory and outputs a `output.Png` image file.
 
 ## Contributors
 
