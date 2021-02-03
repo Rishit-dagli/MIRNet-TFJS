@@ -1,0 +1,40 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Deploy Node.js app
+
+on:
+  push:
+    branches:
+      - prod
+
+jobs:
+  build-and-deploy:
+    if: "!contains(github.event.head_commit.message, 'skip-ci')"
+    
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+      with:
+        lfs: true 
+
+    - name: Set up Node.js version
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    - name: npm install, build, and test
+      run: |
+        npm install
+        npm run build --if-present
+        npm run test --if-present
+      working-directory: ./example
+
+    - name: 'Deploy to Azure Web App'
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'mirnet-tfjs'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_c667ce5d8ece4f6794bb5fa2fee440de }}
+        package: .
