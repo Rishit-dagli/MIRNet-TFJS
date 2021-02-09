@@ -57,9 +57,9 @@ This notebook shows the the process of inferencing for the MIRNet model on a cou
 
 ## Running the TFJS Model, An example
 
-The example can be launched by simply clicking on this button [![Launch Example](https://img.shields.io/badge/launch-example-informational?style=flat&logo=google-chrome)](https://mirnet-tfjs.rishit.tech/). The code for the example can be found under the [`prod`](https://github.com/Rishit-dagli/MIRNet-TFJS/tree/prod) branch in this repo. As of now this example is a very minimalistic one as you can see in the below image. The example website is deployed on the free tier of Azure App Services so inferences could take quite some time (90 seconds or so) when a lot of folks might be using it at the same time.
+The example can be launched by simply clicking on this button [![Launch Example](https://img.shields.io/badge/launch-example-informational?style=flat&logo=google-chrome)](https://mirnet-tfjs.rishit.tech/). The code for the example can be found under the [`example`](./example) folder in this repo. As of now this example is a very minimalistic one as you can see in the below image. The example website is deployed on the free tier of Azure App Services so inferences could take quite some time (90 seconds or so) when a lot of folks might be using it at the same time.
 
-![](images/mirnet-example.png)
+![](https://github.com/Rishit-dagli/MIRNet-TFJS/blob/main/images/mirnet-example.png?raw=true)
 
 ### Getting Started
 
@@ -68,7 +68,7 @@ To get up and running with this example, run the following commands, make sure y
 ```sh
 git clone git@github.com:Rishit-dagli/MIRNet-TFJS.git # or clone your own fork
 cd MIRNet-TFJS
-git checkout prod # switch to the prod branch
+cd example # switch to the example folder
 npm install
 npm start
 ```
@@ -81,17 +81,17 @@ Alternatively you could also get up and running with this example with the free 
 
 ### Troubleshooting
 
-The [`prod`](https://github.com/Rishit-dagli/MIRNet-TFJS/tree/prod) branch has a standalone [`modeltest.js`](https://github.com/Rishit-dagli/MIRNet-TFJS/blob/prod/modeltest.js) file, which tries to run the model on a specified file and then save the output to test the model. You can test the model with this file through:
+The [`example`](./example) folder has a standalone [`modeltest.js`](./example/modeltest.js) file, which tries to run the model on a specified file and then save the output to test the model. You can test the model with this file through:
 
 ```sh
 git clone git@github.com:Rishit-dagli/MIRNet-TFJS.git # or clone your own fork
 cd MIRNet-TFJS
-git checkout prod # switch to the prod branch
+cd example # switch to the example folder
 npm install
 node modeltest.js
 ```
 
-The [`modeltest.js`](https://github.com/Rishit-dagli/MIRNet-TFJS/blob/prod/modeltest.js) uses the `input.PNG` image file in the root directory and outputs a `output.Png` image file.
+The [`modeltest.js`](./example/modeltest.js) uses the `input.PNG` image file in the root directory and outputs a `output.Png` image file.
 
 ## Contributors
 
