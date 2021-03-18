@@ -36,7 +36,7 @@ jobs:
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'mirnet-tfjs'
+        app-name: 'mirnet-tfjs-demo'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_8f220d0b027140998222b35bd5832e81 }}
         package: .  
