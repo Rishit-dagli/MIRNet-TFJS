@@ -73,9 +73,11 @@ cd MIRNet-TFJS
 After cloning the repository you would need to download the 
 [model variables file](https://github.com/Rishit-dagli/MIRNet-TFJS/releases/download/v0.1.0/variables.data-00000-of-00001) 
 [![Download](https://img.shields.io/badge/Download-139MB-blue)](https://github.com/Rishit-dagli/MIRNet-TFJS/releases/download/v0.1.0/variables.data-00000-of-00001) and place it 
-at [`example/model/variables/variables.data-00000-of-00001`](example/model/variables/variables.data-00000-of-00001). Run these commands after doing so:
+at [`example/model/variables/variables.data-00000-of-00001`](example/model/variables/variables.data-00000-of-00001), this step has been covered in the below commands however you 
+can also do this through GUI. Run these commands after doing so:
 
 ```sh
+wget -O ./example/model/variables/variables.data-00000-of-00001 https://github.com/Rishit-dagli/MIRNet-TFJS/releases/download/v0.1.0/variables.data-00000-of-00001
 cd example # switch to the example folder
 npm install
 npm start
