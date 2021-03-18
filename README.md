@@ -1,6 +1,6 @@
 # MIRNet-TFJS [![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FMIRNet-TFJS)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FMIRNet-TFJS)
 
-![Deploy Node.js app](https://github.com/Rishit-dagli/MIRNet-TFJS/workflows/Deploy%20Node.js%20app/badge.svg?branch=prod)
+[![Deploy Node.js app](https://github.com/Rishit-dagli/MIRNet-TFJS/actions/workflows/main_mirnet-tfjs-demo.yml/badge.svg)](https://github.com/Rishit-dagli/MIRNet-TFJS/actions/workflows/main_mirnet-tfjs-demo.yml)
 [![Open TF Hub](https://img.shields.io/badge/open-TF%20Hub-orange?style=flat&logo=tensorflow)](https://tfhub.dev/rishit-dagli/mirnet-tfjs/)
 [![Launch Example](https://img.shields.io/badge/launch-example-informational?style=flat&logo=google-chrome)](https://mirnet-tfjs-demo.azurewebsites.net/)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Rishit-dagli/MIRNet-TFJS/HEAD)
