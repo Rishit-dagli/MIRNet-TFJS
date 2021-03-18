@@ -15,13 +15,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-      with:
-        lfs: true 
 
     - name: Set up Node.js version
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
+        
+    - name: Download LFS Objects
+      uses: wei/wget@v1
+      with:
+        args: -O ./example/model/variables/variables.data-00000-of-00001 https://github.com/Rishit-dagli/MIRNet-TFJS/releases/download/v0.1.0/variables.data-00000-of-00001    
 
     - name: npm install, build, and test
       run: |
