@@ -57,7 +57,7 @@ This notebook shows the the process of inferencing for the MIRNet model on a cou
 
 ## Running the TFJS Model, An example
 
-The example can be launched by simply clicking on this button [![Launch Example](https://img.shields.io/badge/launch-example-informational?style=flat&logo=google-chrome)](https://mirnet-tfjs.rishit.tech/). The code for the example can be found under the [`example`](./example) folder in this repo. As of now this example is a very minimalistic one as you can see in the below image. The example website is deployed on the free tier of Azure App Services so inferences could take quite some time (90 seconds or so) when a lot of folks might be using it at the same time.
+The example can be launched by simply clicking on this button [![Launch Example](https://img.shields.io/badge/launch-example-informational?style=flat&logo=google-chrome)](https://mirnet-tfjs-demo.azurewebsites.net). The code for the example can be found under the [`example`](./example) folder in this repo. As of now this example is a very minimalistic one as you can see in the below image. The example website is deployed on the free tier of Azure App Services so inferences could take quite some time (90 seconds or so) when a lot of folks might be using it at the same time.
 
 ![](https://github.com/Rishit-dagli/MIRNet-TFJS/blob/main/images/mirnet-example.png?raw=true)
 
@@ -68,6 +68,14 @@ To get up and running with this example, run the following commands, make sure y
 ```sh
 git clone git@github.com:Rishit-dagli/MIRNet-TFJS.git # or clone your own fork
 cd MIRNet-TFJS
+```
+
+After cloning the repository you would need to download the 
+[model variables file](https://github.com/Rishit-dagli/MIRNet-TFJS/releases/download/v0.1.0/variables.data-00000-of-00001) 
+[![Download](https://img.shields.io/badge/Download-139MB-blue)](https://github.com/Rishit-dagli/MIRNet-TFJS/releases/download/v0.1.0/variables.data-00000-of-00001) and place it 
+at [`example/model/variables/variables.data-00000-of-00001`](example/model/variables/variables.data-00000-of-00001). Run these commands after doing so:
+
+```sh
 cd example # switch to the example folder
 npm install
 npm start
