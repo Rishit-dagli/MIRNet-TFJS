@@ -7,11 +7,12 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rishit-dagli/MIRNet-TFJS)
 
 [![GitHub license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+![GitHub followers](https://img.shields.io/github/followers/Rishit-dagli?style=social)
 [![GitHub stars](https://img.shields.io/github/stars/Rishit-dagli/MIRNet-TFJS?style=social)](https://github.com/Rishit-dagli/MIRNet-TFJS/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Rishit-dagli/MIRNet-TFJS?style=social)](https://github.com/Rishit-dagli/MIRNet-TFJS/network/members)
-[![GitHub watchers](https://img.shields.io/github/watchers/Rishit-dagli/MIRNet-TFJS?style=social)](https://github.com/Rishit-dagli/MIRNet-TFJS/watchers)
+![Twitter Follow](https://img.shields.io/twitter/follow/rishit_dagli?style=social)
 
-This repository shows the TFJS model conversion and inference processes for the for the **MIRNet** model as proposed by [Learning Enriched Features for Real Image Restoration and Enhancement](https://arxiv.org/pdf/2003.06792v2.pdf) by Zamir et al. This model is capable of enhancing low-light images upto a great extent.
+This repository shows the TFJS model conversion and inference processes for the for the **MIRNet** model as proposed by [Learning Enriched Features for Real Image Restoration and Enhancement](https://arxiv.org/abs/2003.06792) by Zamir et al. This model is capable of enhancing low-light images upto a great extent.
 
 ![Examples](images/mirnet-results.jpg)
 
@@ -102,6 +103,14 @@ node modeltest.js
 ```
 
 The [`modeltest.js`](./example/modeltest.js) uses the `input.PNG` image file in the root directory and outputs a `output.Png` image file.
+
+## Want to Contribute 🙋‍♂️?
+
+Awesome! If you want to contribute to this project, you're always welcome! See [Contributing Guidelines](CONTRIBUTING.md). You can also take a look at [MIRNet-TFJS' Project Status Tracker](https://github.com/Rishit-dagli/MIRNet-TFJS/projects/1) for getting more information about current or upcoming tasks.
+
+## Want to discuss? 💬
+
+Have any questions, doubts or want to present your opinions, views? You're always welcome. You can [start discussions](https://github.com/Rishit-dagli/MIRNet-TFJS/discussions).
 
 ## Contributors
 
