@@ -18,6 +18,22 @@ This repository shows the TFJS model conversion and inference processes for the 
 
 Model training code and pre-trained weights are provided by Soumik through [this repository](https://github.com/soumik12345/MIRNet/).
 
+## Table of contents
+
+- [A bit about the architecture](#a-bit-about-the-architecture)
+- [About the notebooks](#about-the-notebooks)
+  * [`MIRNet_Saved_Model.ipynb`](#mirnet_saved_modelipynb)
+  * [`MIRNet_TFJS.ipynb`](#mirnet_tfjsipynb)
+  * [`MIRNet_Inference.ipynb`](#mirnet_inferenceipynb)
+- [Running the TFJS Model, An example](#running-the-tfjs-model-an-example)
+  * [Getting Started](#getting-started)
+  * [Run online on Repl.it](#run-online-on-replit)
+  * [Troubleshooting](#troubleshooting)
+- [Want to Contribute 🙋‍♂️?](#want-to-contribute-%EF%B8%8F)
+- [Want to discuss? 💬](#want-to-discuss-)
+- [Contributors](#contributors)
+- [License](#license)
+
 ## A bit about the architecture
 
 The **MIRNet** presents a novel architecture with the collective goals of maintaining high-resolution representations through the entire network, and
@@ -86,7 +102,7 @@ npm start
 
 Your app should now be running on [localhost:3000](http://localhost:3000) :rocket:.
 
-#### Run online on Repl.it
+### Run online on Repl.it
 
 Alternatively you could also get up and running with this example with the free to use online service Repl.it. Get started by clicking on this button [![Run on Repl.it](https://repl.it/badge/github/Rishit-dagli/MIRNet-TFJS)](https://repl.it/@RishitDagli/MIRNet-TFJS) after which you would click the Run button on the top or run `npm start` and voila your app is now running :rocket:.
 
