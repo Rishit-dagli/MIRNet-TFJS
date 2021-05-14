@@ -12,6 +12,8 @@
 [![GitHub forks](https://img.shields.io/github/forks/Rishit-dagli/MIRNet-TFJS?style=social)](https://github.com/Rishit-dagli/MIRNet-TFJS/network/members)
 ![Twitter Follow](https://img.shields.io/twitter/follow/rishit_dagli?style=social)
 
+*Featured on [TensorFlow.JS Show And Tell](https://youtu.be/BMza5yrwZ9s)*
+
 This repository shows the TFJS model conversion and inference processes for the for the **MIRNet** model as proposed by [Learning Enriched Features for Real Image Restoration and Enhancement](https://arxiv.org/abs/2003.06792) by Zamir et al. This model is capable of enhancing low-light images upto a great extent.
 
 ![Examples](images/mirnet-results.jpg)
